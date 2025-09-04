@@ -15,6 +15,7 @@ const Message = async(req, res) => {
         sender:"user",
         text
         })
+         res.status(200).json({ message: 'Message received', user });
 
 
    } catch (error) {
